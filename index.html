@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Todo List</h1>
+        </div>
+        <div class="tasksTable">
+            <div class="tableHead">
+                <div class="userState">
+                    <div class="boundary">Dev</div>
+                </div>
+                <div class="tableHeading">Tasks</div>
+                <div class="addtask">
+                    <i class="fa-solid fa-plus addIcon"></i>
+                </div>
+            </div>
+            <div class="tableColumns">
+                <div class="todo columns">
+                    <div class="colHead">
+                        To Do
+                    </div>
+                    <div class="coltasks todoTasks">
+                    </div>
+                </div>
+                <div class="todo columns">
+                    <div class="colHead">
+                        Approved
+                    </div>
+                    <div class="coltasks approvedTasks">
+
+                    </div>                    
+                </div>
+                <div class="inprogress columns">
+                    <div class="colHead">
+                        In-Progress
+                    </div>
+                    <div class="coltasks inProgressTasks"></div>
+                </div>
+                <div class="completed columns">
+                    <div class="colHead">
+                        Completed
+                    </div>
+                    <div class="coltasks completedTasks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="Mymodal-content">
+        </div>
+      
+      </div>    
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></body>
+    <script src="index.js"></script>
+</body>
+</html>

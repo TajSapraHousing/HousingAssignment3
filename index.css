@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    background-color: rgb(36,82,122);
+    color: rgb(93,172,189);
+    scrollbar-color: rgb(36, 82, 122) rgb(93, 172, 189);
+    scrollbar-width: none;
+}
+body>div, p{
+    scrollbar-color: rgb(36, 82, 122) rgb(93, 172, 189);
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.boundary:hover{
+    color: rgb(36,82,122);
+    background-color: rgb(93, 172, 189);
+}
+.boundary{
+    border: 1px solid;
+    min-width: 60px;
+    cursor: pointer;    
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+}
+.main{
+    padding-top: 2%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-height: 100vh;
+    width: 100vw;    
+    background-color: rgb(36,82,122);
+    color: rgb(93,172,189);
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+}
+.tasksTable{
+    border: 1px solid ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    min-height: 500px;
+}
+h1{
+    font-size: max(30px,2.25vw);
+}
+.tableHead{
+    height: 12%;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+.tableHead div{
+    font-size: max(3vw, 30px);
+    text-align: center;
+    width: 33%;
+}
+.addtask{
+    padding-left: 22%;
+    padding-top: 1%;
+}
+.addIcon{
+    cursor: pointer;
+}
+.rotated{
+    transform: rotate(45deg);
+}
+.notrotated{
+    transition: 0s;
+}
+.columns{
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.tableColumns{
+    height: 88%;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .Mymodal-content {
+    height: 80%;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: rgb(93,172,189);
+    color: rgb(36,82,122);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+.colHead{
+    height: 15%;
+    border-bottom: 1px solid;
+}
+.colHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: max(2.5vw, 12px);
+}
+.coltasks{
+    padding: 5%;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 85%;
+}
+#Myform{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#Myform input{
+    height: 18%;
+}
+#Myform textarea{
+    height: 82%;
+}
+.taskCard{
+    border: 1px solid;
+    margin-bottom: 2vw;
+    cursor: pointer;
+    height: 30%;
+    width: 90%;
+}
+.taskCard h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    height: 21%;
+    font-size: max(2vw, 12px);
+}
+.taskCard p{
+    padding-left: 2%;
+    height: 69%;
+    margin: 0;
+    overflow: auto;
+    font-size: min(20px, 3vw);
+}
+.MyForm h1{
+    text-align: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details>textarea, .details>input, .details>button{
+    margin-top: 5vw;
+    width: 40vw;
+    background-color: rgb(36, 82, 122);
+    color: rgb(93, 172, 189);
+    border: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
